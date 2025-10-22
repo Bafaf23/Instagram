@@ -231,14 +231,37 @@ header .featured-history .content-history {
   gap: 10px;
   margin-top: 16px;
   margin-left: 12px;
-  overflow-y: hidden;
+  overflow-y: auto;
+  scroll-behavior: smooth;
+  anchor-name: --carrusel;
 }
 header .featured-history .content-history::-webkit-scrollbar {
   display: none;
 }
-header .featured-history .content-history {
-  -ms-overflow-style: none;
-  scrollbar-width: none;
+header .featured-history .content-history::scroll-button(right),
+header .featured-history .content-history::scroll-button(left) {
+  content: ">";
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  border: none;
+  background-color: rgba(211, 206, 206, 0.774);
+  padding-bottom: 0.1rem;
+  cursor: pointer;
+  position: fixed;
+  position-anchor: --carrusel;
+  position-area: right center;
+  translate: -100%;
+}
+header .featured-history .content-history::scroll-button(left) {
+  content: "<";
+  position-area: left center;
+  translate: 100%;
+}
+header .featured-history .content-history::scroll-button(right):disabled,
+header .featured-history .content-history::scroll-button(left):disabled {
+  opacity: 0.1;
+  cursor: auto;
 }
 
 .movil {
