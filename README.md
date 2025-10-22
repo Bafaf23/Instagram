@@ -1,4 +1,5 @@
 CLONE OF INSTAGRA
+
 This clone is not one hundred percent the same as the original, but it is an exact replica of it.
 No sean duros al momento de corregir este humilde proyecto, las copias nunca han sido mi fuerte. 
 In this jungle of code you can find: happiness from doing what I love, love, sweat, tears, lots of stress, hope, coffee, curses, Agatha All Along spells.
