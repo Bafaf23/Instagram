@@ -1,0 +1,195 @@
+@use "./../utils/mixin.scss" as mix;
+
+header {
+  .w {
+    @include mix.flex(5px, row, start, center);
+    margin-bottom: 10px;
+
+    .img-account {
+      @include mix.flex(0, row, center, center);
+      width: fit-content;
+      height: 100%;
+      margin: 0 28px 0 16px;
+
+      img {
+        width: 77px;
+        height: 77px;
+        border-radius: 50%;
+      }
+    }
+
+    .content-info {
+      @include mix.flex(10px, column, center, start);
+      height: 100%;
+
+      .title {
+        cursor: pointer;
+        @include mix.flex(20px, row, center, center);
+        font-weight: 600;
+
+        .titel-icon {
+          @include mix.flex(0, row, center, center);
+        }
+      }
+
+      .content-section {
+        @include mix.flex(5px, row, center, center);
+        margin: 16px 0 16s 0;
+        .number {
+          font-weight: 600;
+        }
+      }
+    }
+  }
+
+  .description {
+    margin: 0 16px 0 16px;
+
+    .content-description {
+      @include mix.flex(0, column, space-between, start);
+
+      .titel-description {
+        font-weight: 600;
+      }
+
+      .sub-titel-description {
+        color: rgb(192, 190, 190);
+      }
+
+      .txt-description {
+        @include mix.flex(0, column, space-between, start);
+        font-size: 14px;
+      }
+
+      .content-btn {
+        margin: 4px 0 0;
+
+        button {
+          background-color: transparent;
+          @include mix.flex(5px, row, center, center);
+          height: 30px;
+          border: none;
+          font-weight: 600;
+        }
+      }
+
+      .content-link {
+        .links {
+          @include mix.flex(5px, row, center, center);
+          height: 40px;
+          background-color: transparent;
+          font-weight: 600;
+          font-size: 14px;
+        }
+      }
+    }
+  }
+
+  .content-user {
+    @include mix.flex(10px, row, start, center);
+    .img-user {
+      @include mix.flex(0, row, center, center);
+      img {
+        border-radius: 50%;
+        width: 32px;
+        height: 32px;
+        object-fit: cover;
+      }
+    }
+
+    .txt-user {
+      .user-f {
+        font-weight: 600;
+      }
+    }
+  }
+
+  .featured-history {
+    .content-history {
+      @include mix.flex(10px, row, start, center);
+      margin-top: 16px;
+      margin-left: 12px;
+      overflow-y: hidden;
+    }
+    .content-history::-webkit-scrollbar {
+      display: none;
+    }
+
+    .content-history {
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+    }
+  }
+}
+
+.movil {
+  display: block;
+}
+
+.table {
+  display: none;
+}
+
+.desktop {
+  display: none;
+}
+
+@media only screen and (min-width: 600px) {
+  .movil {
+    display: none;
+  }
+
+  .table {
+    display: block;
+  }
+
+  .desktop {
+    display: none;
+  }
+
+  .title {
+    font-size: 26px;
+    font-weight: 800;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .movil {
+    display: none;
+  }
+
+  .table {
+    display: none;
+  }
+
+  .desktop {
+    display: block;
+  }
+
+  .description {
+    margin: 0 !important;
+  }
+
+  header {
+    max-width: 40rem !important;
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+  }
+
+  .w {
+    @include mix.flex(5px, row, center, center);
+  }
+
+  .img-account {
+    width: fit-content;
+    height: 100%;
+    margin: 0 28px 0 16px;
+
+    img {
+      width: 150px !important;
+      height: 150px !important;
+      border-radius: 50%;
+    }
+  }
+}

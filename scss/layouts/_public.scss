@@ -1,0 +1,12 @@
+@use "./../utils/mixin" as mix;
+
+.content-pub {
+  width: 100%;
+  @include mix.grid(2px, 3, 1);
+}
+
+@media only screen and (min-width: 1000px) {
+  .content-pub {
+    @include mix.grid(2px, 4, 1);
+  }
+}

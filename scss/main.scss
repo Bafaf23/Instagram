@@ -1,0 +1,15 @@
+@use "./base/reset";
+
+@use "./layouts/header";
+@use "./layouts/main.header";
+@use "./layouts/bar-main";
+@use "./layouts/public";
+@use "./layouts/aside";
+@use "./layouts/aside-destop";
+@use "./layouts/asider-tables";
+
+@use "./components/buttom";
+@use "./components/history";
+@use "./components/bar";
+@use "./components/publics";
+@use "./components/icon-asider";

@@ -1,0 +1,12 @@
+@use "./../utils/mixin.scss" as mix;
+
+.icon-aside {
+  padding: 12px;
+
+  img.user-acunt {
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+    object-fit: cover;
+  }
+}

@@ -1,0 +1,36 @@
+@use "./../utils/mixin.scss" as mix;
+
+.publicacion {
+  position: relative;
+  width: 100%;
+
+  .icon-public {
+    position: absolute;
+    @include mix.flex(0, row, end, center);
+    padding: 5px;
+    width: 100%;
+
+    img {
+      width: 20px;
+    }
+  }
+
+  img {
+    width: 100%;
+    height: 100%;
+    aspect-ratio: 3/4;
+    object-fit: cover;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+  }
+
+  &:hover::before {
+    background-color: rgba(0, 0, 0, 0.658);
+    cursor: pointer;
+  }
+}

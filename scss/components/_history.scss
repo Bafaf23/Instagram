@@ -1,0 +1,23 @@
+@use "./../utils/mixin.scss" as mix;
+
+.history {
+  @include mix.flex(5px, column, center, center);
+  cursor: pointer;
+
+  .img-history {
+    img {
+      width: 56px;
+      height: 56px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+  }
+
+  p {
+    width: 100px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-align: center;
+  }
+}

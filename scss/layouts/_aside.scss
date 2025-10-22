@@ -1,0 +1,22 @@
+@use "./../utils/mixin.scss" as mix;
+
+.aside-movil {
+  @include mix.flex(10px, row, space-around, center);
+  width: 100%;
+  position: sticky;
+  bottom: 0;
+  border-top: 1px solid #dbdbdb;
+  background-color: #fff;
+}
+
+@media only screen and (min-width: 768px) {
+  .aside-movil {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  .aside-movil {
+    display: none;
+  }
+}

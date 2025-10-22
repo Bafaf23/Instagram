@@ -1,0 +1,8 @@
+@use "./../utils/mixin.scss" as mix;
+
+.bar-main {
+  @include mix.flex(20px, row, space-around, center);
+  margin-top: 15px;
+  border-bottom: 1px solid #dbdbdb;
+  width: 100%;
+}
