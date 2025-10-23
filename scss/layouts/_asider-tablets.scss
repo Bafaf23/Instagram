@@ -1,12 +1,12 @@
 @use "./../utils/mixin.scss" as mix;
 
-.aside-tables {
+.aside-tablets {
   display: none;
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 768px) {
-  .aside-tables {
+  .aside-tablets {
     display: block;
     @include mix.flex(0, column, space-between, center);
     padding: 8px 12px 20px;
@@ -71,7 +71,7 @@
 }
 
 @media only screen and (min-width: 1000px) {
-  .aside-tables {
+  .aside-tablets {
     display: none;
   }
 }

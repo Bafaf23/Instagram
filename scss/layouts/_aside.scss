@@ -9,14 +9,158 @@
   background-color: #fff;
 }
 
+.aside-tablets {
+  display: none;
+}
+
+.aside-desktop {
+  display: none;
+}
+
 @media only screen and (min-width: 768px) {
   .aside-movil {
     display: none;
+  }
+
+  .aside-desktop {
+    display: none;
+  }
+
+  .aside-tablets {
+    display: block;
+    @include mix.flex(0, column, space-between, center);
+    padding: 8px 12px 20px;
+    width: 5rem;
+    height: 100%;
+    border-right: 1px solid #dbdbdb;
+
+    .icon-aside-t {
+      width: 100%;
+      padding: 10px;
+      @include mix.flex(0, row, center, center);
+      border-radius: 5px;
+
+      &:hover {
+        background-color: #dbdbdb;
+      }
+    }
+
+    .content-aside-t {
+      width: 100%;
+      height: 100%;
+      margin-top: 30px;
+      @include mix.flex(0, column, start, center);
+
+      .link-t {
+        border-radius: 5px;
+        padding: 10px;
+        width: 100%;
+        @include mix.flex(0, row, center, center);
+        background-color: #fff;
+        a {
+          .img-account-user {
+            width: 24px;
+            height: 24px;
+            border-radius: 50%;
+          }
+        }
+
+        &:hover {
+          background-color: #dbdbdb;
+        }
+      }
+    }
+
+    .deger-t {
+      width: 100%;
+      @include mix.flex(10px, column, start, center);
+
+      .link-t {
+        border-radius: 5px;
+        padding: 10px;
+        width: 100%;
+        @include mix.flex(0, row, center, center);
+        background-color: #fff;
+
+        &:hover {
+          background-color: #dbdbdb;
+        }
+      }
+    }
   }
 }
 
 @media only screen and (min-width: 1000px) {
   .aside-movil {
     display: none;
+  }
+
+  .aside-tablets {
+    display: none;
+  }
+
+  .aside-desktop {
+    display: block;
+    padding: 8px 12px 20px;
+    width: 244px;
+    height: 100%;
+    border-right: 1px solid #dbdbdb;
+    background-color: #fff;
+    @include mix.flex(20px, column, left, start);
+
+    .icon-aside-desktop {
+      width: 200px;
+      padding: 20px;
+    }
+  }
+
+  .content-aside-desktop {
+    width: 100%;
+    height: 100%;
+    @include mix.flex(5px, column, start, start);
+
+    .link-d {
+      border-radius: 5px;
+      width: 100%;
+      padding: 10px;
+
+      a {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+
+        .img-account-user {
+          border-radius: 50%;
+          width: 24px;
+          height: 24px;
+          object-fit: cover;
+        }
+      }
+
+      &:hover {
+        background-color: #f0f2f5;
+      }
+    }
+  }
+
+  .deger {
+    width: 100%;
+    @include mix.flex(20px, column, start, start);
+
+    .link-d {
+      border-radius: 5px;
+      width: 100%;
+      padding: 10px;
+
+      a {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+      }
+
+      &:hover {
+        background-color: #f0f2f5;
+      }
+    }
   }
 }

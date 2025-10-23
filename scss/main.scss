@@ -1,12 +1,13 @@
+@use "./base/base";
 @use "./base/reset";
 
 @use "./layouts/header";
-@use "./layouts/main.header";
+@use "./layouts/main-header";
 @use "./layouts/bar-main";
-@use "./layouts/public";
+@use "./layouts/publications";
 @use "./layouts/aside";
-@use "./layouts/aside-destop";
-@use "./layouts/asider-tables";
+// @use "./layouts/aside-desktop";
+// @use "./layouts/asider-tablets";
 
 @use "./components/buttom";
 @use "./components/history";
