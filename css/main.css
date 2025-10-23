@@ -2,7 +2,8 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
 body {
@@ -218,7 +219,7 @@ header .content-user .img-user img {
   width: 32px;
   height: 32px;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 header .content-user .txt-user .user-f {
   font-weight: 600;
@@ -402,11 +403,11 @@ header .featured-history .content-history::scroll-button(left):disabled {
     justify-content: left;
     gap: 20px;
   }
-  .aside-desktop .icon-aside-d {
+  .aside-desktop .icon-aside-desktop {
     width: 200px;
     padding: 20px;
   }
-  .content-aside-d {
+  .content-aside-desktop {
     width: 100%;
     height: 100%;
     display: flex;
@@ -415,24 +416,24 @@ header .featured-history .content-history::scroll-button(left):disabled {
     justify-content: start;
     gap: 5px;
   }
-  .content-aside-d .link-d {
+  .content-aside-desktop .link-d {
     border-radius: 5px;
     width: 100%;
     padding: 10px;
   }
-  .content-aside-d .link-d a {
+  .content-aside-desktop .link-d a {
     display: flex;
     align-items: center;
     gap: 10px;
   }
-  .content-aside-d .link-d a .img-account-user {
+  .content-aside-desktop .link-d a .img-account-user {
     border-radius: 50%;
     width: 24px;
     height: 24px;
     -o-object-fit: cover;
-       object-fit: cover;
+    object-fit: cover;
   }
-  .content-aside-d .link-d:hover {
+  .content-aside-desktop .link-d:hover {
     background-color: #f0f2f5;
   }
   .deger {
@@ -457,13 +458,13 @@ header .featured-history .content-history::scroll-button(left):disabled {
     background-color: #f0f2f5;
   }
 }
-.aside-tables {
+.aside-tablets {
   display: none;
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 768px) {
-  .aside-tables {
+  .aside-tablets {
     display: block;
     display: flex;
     flex-direction: column;
@@ -475,7 +476,7 @@ header .featured-history .content-history::scroll-button(left):disabled {
     height: 100%;
     border-right: 1px solid #dbdbdb;
   }
-  .aside-tables .icon-aside-t {
+  .aside-tablets .icon-aside-t {
     width: 100%;
     padding: 10px;
     display: flex;
@@ -485,10 +486,10 @@ header .featured-history .content-history::scroll-button(left):disabled {
     gap: 0;
     border-radius: 5px;
   }
-  .aside-tables .icon-aside-t:hover {
+  .aside-tablets .icon-aside-t:hover {
     background-color: #dbdbdb;
   }
-  .aside-tables .content-aside-t {
+  .aside-tablets .content-aside-t {
     width: 100%;
     height: 100%;
     margin-top: 30px;
@@ -498,7 +499,7 @@ header .featured-history .content-history::scroll-button(left):disabled {
     justify-content: start;
     gap: 0;
   }
-  .aside-tables .content-aside-t .link-t {
+  .aside-tablets .content-aside-t .link-t {
     border-radius: 5px;
     padding: 10px;
     width: 100%;
@@ -509,15 +510,15 @@ header .featured-history .content-history::scroll-button(left):disabled {
     gap: 0;
     background-color: #fff;
   }
-  .aside-tables .content-aside-t .link-t a .img-account-user {
+  .aside-tablets .content-aside-t .link-t a .img-account-user {
     width: 24px;
     height: 24px;
     border-radius: 50%;
   }
-  .aside-tables .content-aside-t .link-t:hover {
+  .aside-tablets .content-aside-t .link-t:hover {
     background-color: #dbdbdb;
   }
-  .aside-tables .deger-t {
+  .aside-tablets .deger-t {
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -525,7 +526,7 @@ header .featured-history .content-history::scroll-button(left):disabled {
     justify-content: start;
     gap: 10px;
   }
-  .aside-tables .deger-t .link-t {
+  .aside-tablets .deger-t .link-t {
     border-radius: 5px;
     padding: 10px;
     width: 100%;
@@ -536,12 +537,12 @@ header .featured-history .content-history::scroll-button(left):disabled {
     gap: 0;
     background-color: #fff;
   }
-  .aside-tables .deger-t .link-t:hover {
+  .aside-tablets .deger-t .link-t:hover {
     background-color: #dbdbdb;
   }
 }
 @media only screen and (min-width: 1000px) {
-  .aside-tables {
+  .aside-tablets {
     display: none;
   }
 }
@@ -611,7 +612,7 @@ button:hover {
   height: 56px;
   border-radius: 50%;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 .history p {
   width: 100px;
@@ -647,7 +648,7 @@ button:hover {
   height: 100%;
   aspect-ratio: 3/4;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 .publicacion::before {
   content: "";
@@ -668,5 +669,5 @@ button:hover {
   width: 24px;
   height: 24px;
   -o-object-fit: cover;
-     object-fit: cover;
-}/*# sourceMappingURL=main.css.map */
+  object-fit: cover;
+} /*# sourceMappingURL=main.css.map */
